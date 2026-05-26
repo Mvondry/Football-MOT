@@ -75,13 +75,15 @@ YOLO26       → DeepSORT → HOTA evaluation
 
 The experiments use the SoccerNet-Tracking dataset.
 
-The dataset is not included in this repository, it is available on this link:
+The dataset is not included in this repository.
+
+It must be downloaded separately from the official SoccerNet source and placed locally.
+
+Dataset link:
 
 ```text
 https://www.soccer-net.org/data
 ```
-It must be downloaded separately from the official SoccerNet source and placed locally.
-
 
 The expected sequence structure is:
 
