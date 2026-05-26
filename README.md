@@ -75,7 +75,13 @@ YOLO26       → DeepSORT → HOTA evaluation
 
 The experiments use the SoccerNet-Tracking dataset.
 
-The dataset is not included in this repository. It must be downloaded separately from the official SoccerNet source and placed locally.
+The dataset is not included in this repository, it is available on this link:
+
+```text
+https://www.soccer-net.org/data
+```
+It must be downloaded separately from the official SoccerNet source and placed locally.
+
 
 The expected sequence structure is:
 
@@ -89,22 +95,6 @@ SNMOT-xxx/
 │   └── gt.txt
 └── seqinfo.ini
 ```
-
-Some scripts expect split files containing one sequence per line, for example:
-
-```text
-train/SNMOT-060
-test/SNMOT-116
-```
-
-or directly:
-
-```text
-SNMOT-060
-SNMOT-116
-```
-
-If only sequence names are used, the scripts search for the corresponding sequence directory under the dataset root.
 
 ## Model weights
 
@@ -153,7 +143,7 @@ DeepSORT/external/deep_sort_pytorch/deep_sort/deep/checkpoint/ckpt.t7
 Checkpoint download link:
 
 ```text
-TODO: add Google Drive link
+https://drive.google.com/drive/folders/1yFcThZ3A7n93yMePAcFdbyxFzkby4oMc?usp=sharing
 ```
 
 ## Faster R-CNN experiments
