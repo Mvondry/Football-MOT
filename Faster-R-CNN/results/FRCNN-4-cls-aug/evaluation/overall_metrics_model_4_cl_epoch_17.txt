@@ -1,0 +1,27 @@
+=== OVERALL DETECTION METRICS (from confusion matrix) ===
+
+Model path: models/model_4_cl_20_ep_22_1/model_4_cl_epoch_17.pth
+Test file: /storage/plzen1/home/mvondry/BP/faster_r_cnn/test.txt
+Output dir: evaluation_results/model_4_cl_20_ep_22_1__model_4_cl_epoch_17
+
+OVERALL_MICRO
+  Precision: 0.905029
+  Recall:    0.931544
+  F1-Score:  0.918095
+  TP:        177326
+  FP:        18608
+  FN:        13031
+  Support:   190357
+
+OVERALL_MACRO
+  Precision: 0.825481
+  Recall:    0.785463
+  F1-Score:  0.801578
+  Support:   190357
+
+OVERALL_WEIGHTED
+  Precision: 0.902437
+  Recall:    0.931544
+  F1-Score:  0.915998
+  Support:   190357
+

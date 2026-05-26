@@ -1,0 +1,19 @@
+experiment_name: YOLO26l-noaug
+
+model: yolo26l.pt
+
+data: /path/to/yolo_snmot_4cls/snmot.yaml
+
+training:
+  epochs: 100
+  imgsz: 640
+  batch: 16
+  device: 0
+  workers: 6
+  seed: 0
+  patience: 50
+  exist_ok: true
+  plots: true
+
+augmentation:
+  enabled: false

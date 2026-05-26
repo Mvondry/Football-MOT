@@ -1,0 +1,39 @@
+experiment_name: FRCNN-4-cls-aug
+
+model:
+  num_classes: 5
+  pretrained: true
+
+data:
+  gt_filename: gt_4_cls.txt
+  class_names:
+    - background
+    - player
+    - goalkeeper
+    - ball
+    - referee
+
+splits:
+  train: splits/train.txt
+  val: splits/val.txt
+  test: splits/test.txt
+
+training:
+  epochs: 20
+  batch_size: 4
+  learning_rate: 0.005
+  momentum: 0.9
+  weight_decay: 0.0005
+  lr_step_size: 10
+  lr_gamma: 0.1
+  num_workers: 4
+
+augmentation:
+  enabled: true
+  random_zoom_out: 0.25
+  random_photometric_distort: 0.4
+  random_horizontal_flip: 0.4
+
+evaluation:
+  score_threshold: 0.5
+  iou_threshold: 0.5

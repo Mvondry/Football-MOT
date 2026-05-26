@@ -1,0 +1,51 @@
+experiment_name: YOLO26s-aug-DeepSORT
+
+external:
+  deep_sort_pytorch: external/deep_sort_pytorch
+  sn_trackeval: external/sn-trackeval
+
+data:
+  data_root: /path/to/SoccerNet-Tracking
+  split_file: splits/test.txt
+
+detector:
+  weights: ../model_weights/YOLO26/YOLO26s-aug/best.pt
+  image_size: 640
+  confidence_threshold: 0.35
+  device: 0
+  keep_classes:
+
+deepsort:
+  checkpoint: external/deep_sort_pytorch/deep_sort/deep/checkpoint/ckpt.t7
+  params:
+    max_dist: 0.1
+    min_confidence: 0.0
+    nms_max_overlap: 1.0
+    max_iou_distance: 0.85
+    max_age: 40
+    n_init: 4
+    nn_budget: 100
+
+trackeval:
+  output_root: trackeval_data_results
+  tracker_name: YOLO26s-aug-DeepSORT
+  seqmap_name: test_seqmap.txt
+  split: test
+  trackeval_class: pedestrian
+  output_class_name: football
+
+output:
+  save_class_output: true
+  class_match_iou_threshold: 0.05
+  debug: false
+
+visualization:
+  track_subdir: data_with_classes
+  class_id_offset: 0
+  draw_confidence: false
+  video_fps: 25
+  class_names:
+    - player
+    - goalkeeper
+    - ball
+    - referee

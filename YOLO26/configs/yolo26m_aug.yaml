@@ -1,0 +1,34 @@
+experiment_name: YOLO26m-aug
+
+model: yolo26m.pt
+
+data: /path/to/yolo_snmot_4cls/snmot.yaml
+
+training:
+  epochs: 100
+  imgsz: 640
+  batch: 16
+  device: 0
+  workers: 6
+  seed: 0
+  patience: 50
+  exist_ok: true
+  plots: true
+
+augmentation:
+  enabled: true
+  mixup: 0.15
+  cutmix: 0.10
+  degrees: 3.0
+  shear: 2.0
+  perspective: 0.0005
+  multi_scale: 0.25
+
+  albumentations:
+    blur: 0.05
+    median_blur: 0.02
+    to_gray: 0.02
+    clahe: 0.05
+    random_brightness_contrast: 0.20
+    random_gamma: 0.15
+    image_compression: 0.20

@@ -1,0 +1,1 @@
+Done | Total time: 794.87s | Average time per sequence: 49.68s

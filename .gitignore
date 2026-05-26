@@ -1,0 +1,76 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+**/.venv/
+**/venv/
+**/env/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Weights/checkpoints
+*.pt
+*.pth
+*.ckpt
+*.t7
+/model_weights/
+
+# Root-level local datasets
+/data/
+/dataset/
+/datasets/
+
+# Subproject local datasets
+/Faster-R-CNN/data/
+/Faster-R-CNN/dataset/
+/Faster-R-CNN/datasets/
+
+/YOLO26/data/
+/YOLO26/dataset/
+/YOLO26/datasets/
+/YOLO26/yolo_data/
+/YOLO26/yolo_snmot_4cls/
+/YOLO26/yolo_snmot_4cls_debug/
+
+/DeepSORT/data/
+/DeepSORT/dataset/
+/DeepSORT/datasets/
+
+# External repositories
+/DeepSORT/external/deep_sort_pytorch/
+/DeepSORT/external/sn-trackeval/
+
+# Optional detection caches
+det_cache/
+*_cache/
+
+# Generated visualization images and videos
+**/visualizations/
+*.jpg
+*.jpeg
+*.bmp
+*.webp
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# DeepSORT large generated tracking/evaluation intermediate files
+/DeepSORT/trackeval_data_results/gt/
+/DeepSORT/trackeval_data_results/seqmaps/
+/DeepSORT/trackeval_data_results/trackers/*/data/
+/DeepSORT/trackeval_data_results/trackers/*/data_with_classes/

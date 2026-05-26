@@ -1,0 +1,16 @@
+train/SNMOT-076
+test/SNMOT-116
+test/SNMOT-117
+test/SNMOT-118
+test/SNMOT-119
+test/SNMOT-120
+test/SNMOT-121
+test/SNMOT-122
+test/SNMOT-123
+test/SNMOT-125
+test/SNMOT-126
+test/SNMOT-127
+test/SNMOT-128
+test/SNMOT-129
+test/SNMOT-130
+test/SNMOT-131

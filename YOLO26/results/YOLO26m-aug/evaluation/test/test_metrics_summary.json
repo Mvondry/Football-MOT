@@ -1,0 +1,20 @@
+{
+    "weights": "/auto/plzen1/home/mvondry/BP/yolo26/runs/detect/yolo26-football/run_4_classes_4_3/weights/best.pt",
+    "data": "/auto/plzen1/home/mvondry/BP/dataset/yolo_data/snmot.yaml",
+    "split": "test",
+    "imgsz": 640,
+    "batch": 16,
+    "device": "0",
+    "save_dir": "/auto/plzen1/home/mvondry/BP/yolo26/evaluation/yolo26-test-eval-classes/run_4_classes_4_3_test_classes",
+    "precision": 0.8658470717625826,
+    "recall": 0.7609046018634645,
+    "mAP50": 0.8070122995268693,
+    "mAP50-95": 0.5071542828437055,
+    "mAP75": 0.5694918856749469,
+    "speed": {
+        "preprocess": 0.538219822725902,
+        "inference": 4.958920461280893,
+        "loss": 0.0004006079398095608,
+        "postprocess": 0.11705517613639434
+    }
+}

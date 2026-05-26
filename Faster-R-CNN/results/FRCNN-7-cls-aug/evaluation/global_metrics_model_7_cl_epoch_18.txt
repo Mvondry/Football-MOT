@@ -1,0 +1,10 @@
+=== GLOBAL COCO METRICS ===
+Model path: models/model_7_cl_20_ep_5_1/model_7_cl_epoch_18.pth
+Test file: /storage/plzen1/home/mvondry/BP/faster_r_cnn/test_with_other.txt
+
+mAP (IoU=0.50:0.95): 0.4560
+mAP50 (IoU=0.50):    0.7809
+mAP75 (IoU=0.75):    0.4831
+mAP Small:           0.2117
+mAP Medium:          0.4395
+mAP Large:           0.4715
